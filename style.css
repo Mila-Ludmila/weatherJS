@@ -1,0 +1,63 @@
+body {
+  background-color: rgb(114, 113, 113);
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 40vh;
+}
+
+.weather {
+  background-color: rgb(112, 168, 112);
+  border-radius: 10px;
+  max-width: 450px;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.weather:nth-child(n) {
+  color: white;
+}
+
+.weatherLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherLoading img {
+  max-width: 50px;
+}
+
+.weatherHeader {
+  display: flex;
+}
+
+.weatherMain {
+  flex: 1 1 auto;
+}
+
+.weatherCity {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.weatherStatus {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.weatherTemp {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.weatherTemp::after,
+.weatherFeelsLike::after {
+  display: inline-block;
+  margin-left: 5px;
+  content: "℃";
+}
